@@ -1,19 +1,12 @@
 package com.example;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Spy;
-import org.mockito.junit.MockitoJUnitRunner;
-
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
-@RunWith(MockitoJUnitRunner.class)
 public class FelineTest {
 
-    @Spy
-    private Feline feline;
+    private final Feline feline = new Feline();
 
     @Test
     public void eatMeatReturnsPredatorFoodList() throws Exception {
